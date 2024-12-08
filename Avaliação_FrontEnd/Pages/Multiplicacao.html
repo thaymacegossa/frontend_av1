@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/template.css">
+    <link rel="stylesheet" href="../Styles/multiplicacao/Styles.css">
+    <title>Multiplicação</title>
+</head>
+<body>
+    <header>
+            <div class="header-conteudo">
+                <h1>Tabela de Multiplicação</h1>
+            <p>Discente: Thayani Macegossa Rodriges</p>
+        </div>
+    </header>
+
+    <div class="corpo">
+        <div class="corpo-header">
+            <button class="voltar button button-default" onclick="window.location.href='../index.html'">Voltar</button>
+        </div>
+
+        <div class="corpo-conteudo">
+            <label for="numeroInput">Digite um número positivo:</label>
+            <div class="input-container">
+                <input type="number" id="numeroInput" placeholder="Número"/>
+                <button onclick="gerarTabela()">Gerar Tabela</button>
+            </div>
+            
+            <table id="tabelaMultiplicacao">
+                <thead>
+                    <tr>
+                        <th>Multiplicador</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td id="redultado1"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td id="redultado2"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td id="redultado3"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td id="redultado4"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td id="redultado5"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td id="redultado6"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td id="redultado7"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td id="redultado8"></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td id="redultado9"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td id="redultado10"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Lista de Exercicios Tecnologias para Front-End II</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="../Scripts/multiplicacao/Multiplicacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/template.css">
+    <link rel="stylesheet" href="../Styles/palidromo/Styles.css">
+    <title>Verificador de Palíndromo</title>
+</head>
+<body>
+    <header>
+            <div class="header-conteudo">
+                <h1>Verificador de Palíndromo</h1>
+            <p>Discente: Thayani Macegossa Rodriges</p>
+        </div>
+    </header>
+    
+    <div class="corpo">
+        <div class="corpo-header">
+            <button class="voltar button button-default" onclick="window.location.href='../index.html'">Voltar</button>
+        </div>
+
+        <div class="corpo-conteudo">
+            <input type="text" id="palavra" placeholder="Digite uma palavra" class="input-default"/>
+            <button onclick="verificarPalindromo()" class="button button-default">Verificar</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Lista de Exercicios Tecnologias para Front-End II</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="../Scripts/palidromo/Palindromo.js"></script>
+</body>
+</html>

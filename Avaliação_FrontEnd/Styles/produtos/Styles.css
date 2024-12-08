@@ -1,0 +1,7 @@
+.form-grid {
+    grid-template-columns: 200px;
+}
+table {
+    width: 700px;
+    margin-bottom: 15px;
+}

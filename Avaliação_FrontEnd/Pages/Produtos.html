@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/template.css">
+    <link rel="stylesheet" href="../Styles/produtos/Styles.css">
+    <title>Estoque de Produtos</title>
+</head>
+<body>
+    <header>
+            <div class="header-conteudo">
+                <h1>Estoque de Produtos</h1>
+            <p>Discente: Thayani Macegossa Rodriges</p>
+        </div>
+    </header>
+    
+    <div class="corpo">
+        <div class="corpo-header">
+            <button class="voltar button button-default" onclick="window.location.href='../index.html'">Voltar</button>
+        </div>
+
+        <div class="corpo-conteudo">
+            <div class="form-grid">
+                <h3>Cadastro de Produto</h3>
+                <form id="produtoForm">
+                    <input type="text" id="nome" placeholder="Nome do Produto" required>
+                    <input type="number" id="preco" placeholder="Preço" required step="0.01">
+                    <input type="number" id="quantidade" placeholder="Quantidade" required>
+                    <button type="submit" class="button button-small">Adicionar Produto</button>
+                </form>
+            </div>
+    
+            <table id="tabelaProdutos">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os produtos serão adicionados aqui -->
+                </tbody>
+            </table>
+    
+            <div id="resultado"></div> <!-- Div para exibir resultados -->
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Lista de Exercicios Tecnologias para Front-End II</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="../Scripts/produtos/Produtos.js"></script>
+</body>
+</html>

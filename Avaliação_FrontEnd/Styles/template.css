@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F9EA0;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.header-conteudo {
+    width: 100%;
+    justify-items: center;
+}
+
+.corpo {
+    flex: 1;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #708090;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px groove #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.button {
+    background-color: #5f9ea0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #4f7e80;
+}
+.button.button-default {
+    display: block;
+    margin: 1em;
+    padding: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+}
+.button.button-small {
+    display: block;
+    margin: 1em;
+    padding: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 12px;
+}
+.button.button-long {
+    display: block;
+    margin: 1em;
+    padding: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
+}
+.button.button-input {
+    border: none;
+    background-color: #5f9ea0;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.voltar.button-default {
+    margin: 0;
+    padding: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.corpo-header {
+    margin-bottom: 2em;
+}
+
+.corpo-conteudo {
+    justify-items: center;
+}
+
+input.input-default {
+    font-size: 16px;
+    height: 3em;
+    width: 26em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border-width: 1px;
+    padding-left: 1.5em;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: -webkit-center;
+    margin-bottom: 20px;
+}
+
+.form-grid label {
+    font-weight: bold;
+    align-self: center;
+}
+
+.form-grid input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    max-width: 315px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-container button {
+    border: none;
+    background-color: #5f9ea0;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.input-container button:hover {
+    background-color: #4f7e80;
+}
+
+table {
+    width: 300px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #5f9ea0;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}

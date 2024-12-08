@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/template.css">
+    <link rel="stylesheet" href="../Styles/idade/Styles.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+            <div class="header-conteudo">
+                <h1>Verificador de Idade</h1>
+            <p>Discente: Thayani Macegossa Rodriges</p>
+        </div>
+    </header>
+
+    <div class="corpo">
+        <div class="corpo-header">
+            <button class="voltar button button-default" onclick="window.location.href='../index.html'">Voltar</button>
+        </div>
+
+        <div class="corpo-conteudo">
+            <div id="inputContainer" class="form-grid">
+                <label for="nomeInput">Nome:</label>
+                <input type="text" id="nomeInput" placeholder="Digite o nome" />
+    
+                <label for="idadeInput">Idade:</label>
+                <input type="number" id="idadeInput" placeholder="Digite a idade" />
+
+                <div class="bottom-bar">
+                    <button onclick="adicionarPessoa()" class="button button-small">Adicionar Pessoa</button>
+                </div>
+            </div>
+    
+            <button onclick="exibirMaiores18()" class="button button-long">Ver Pessoas com Mais de 18 Anos</button>
+            
+            <div id="resultado">
+
+            </div> <!-- Div para exibir resultados -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Lista de Exercicios Tecnologias para Front-End II</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../Scripts/idade/Idade.js"></script>
+</body>
+</html>

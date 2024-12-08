@@ -1,0 +1,7 @@
+.form-grid.bottom-bar {
+    grid-column: 2;
+}
+
+#resultado {
+    display: none;
+}

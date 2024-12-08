@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/template.css">
+    <link rel="stylesheet" href="../Styles/tarefas/Styles.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <header>
+            <div class="header-conteudo">
+                <h1>Lista de Tarefas</h1>
+            <p>Discente: Thayani Macegossa Rodriges</p>
+        </div>
+    </header>
+    
+    <div class="corpo">
+        <div class="corpo-header">
+            <button class="voltar button button-default" onclick="window.location.href='../index.html'">Voltar</button>
+        </div>
+
+        <div class="corpo-conteudo">
+            <div class="form-grid master">
+                <div class="form-grid">
+                    <label for="tarefaInput">Adicione uma tarefa</label>
+                    <div class="input-container">
+                        <input type="text" id="tarefaInput" placeholder="Digite uma tarefa"/>
+                        <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+                    </div>
+            
+                    <label for="tarefaIndex">Marcar tarefa como concluída:</label>
+                    <div class="input-container">
+                        <input type="number" id="tarefaIndex" placeholder="Número da tarefa a concluir"/>
+                        <button onclick="concluirTarefa()">Concluir Tarefa</button>
+                    </div>
+                </div>
+    
+                <div class="tarefas">
+                    <h2>Tarefas:</h2>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Index</th>
+                                    <th>Nome</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tarefaLista">
+                                <!-- Tarefas cadastradas -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Lista de Exercicios Tecnologias para Front-End II</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="../Scripts/tarefas/Tarefas.js"></script>
+</body>
+</html>

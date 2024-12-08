@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/template.css">
+    <link rel="stylesheet" href="../Styles/calculadora/Styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+            <div class="header-conteudo">
+                <h1>Calculadora</h1>
+            <p>Discente: Thayani Macegossa Rodriges</p>
+        </div>
+    </header>
+
+    <div class="corpo">
+        <div class="corpo-header">
+            <button class="voltar button button-default" onclick="window.location.href='../index.html'">Voltar</button>
+        </div>
+
+        <div class="corpo-conteudo">
+            <div class="calculadora">
+                <input type="text" id="resultado" disabled>
+                <div class="botoes">
+                    <button onclick="limpar()" class="calculadora-botao botao-operador">C</button>
+                    <button onclick="remover()" class="calculadora-botao botao-operador">⌫</button>
+                    <button onclick="adicionarOperacao('**')" class="calculadora-botao botao-operador">**</button>
+                    <button onclick="adicionarOperacao('/')" class="calculadora-botao botao-operador">/</button>
+        
+                    <button onclick="adicionarNumero(7)" class="calculadora-botao">7</button>
+                    <button onclick="adicionarNumero(8)" class="calculadora-botao">8</button>
+                    <button onclick="adicionarNumero(9)" class="calculadora-botao">9</button>
+                    <button onclick="adicionarOperacao('*')" class="calculadora-botao botao-operador">*</button>
+        
+                    <button onclick="adicionarNumero(4)" class="calculadora-botao">4</button>
+                    <button onclick="adicionarNumero(5)" class="calculadora-botao">5</button>
+                    <button onclick="adicionarNumero(6)" class="calculadora-botao">6</button>
+                    <button onclick="adicionarOperacao('-')" class="calculadora-botao botao-operador">-</button>
+        
+                    <button onclick="adicionarNumero(1)" class="calculadora-botao">1</button>
+                    <button onclick="adicionarNumero(2)" class="calculadora-botao">2</button>
+                    <button onclick="adicionarNumero(3)" class="calculadora-botao">3</button>
+                    <button onclick="adicionarOperacao('+')" class="calculadora-botao botao-operador">+</button>
+        
+                    <button onclick="adicionarNumero(0)" onclick="adicionarNumero(0)" class="calculadora-botao botao-zero">0</button>
+                    <button onclick="adicionarNumero('.')" class="calculadora-botao">.</button>
+                    <button onclick="calcular()" class="calculadora-botao botao-operador">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Lista de Exercicios Tecnologias para Front-End II</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../Scripts/calculadora/Calculadora.js"></script>
+</body>
+</html>
